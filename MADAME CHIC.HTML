@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ELECTRO-CMT | Premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family:'Cairo',sans-serif;
+background:linear-gradient(135deg,#071a3a,#0d2c6c,#0f3f91);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.container{
+padding:40px 20px;
+animation:fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(30px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+h1{
+margin:5px 0;
+font-size:26px;
+}
+
+.gold{
+color:#d4af37;
+}
+
+.btn{
+display:block;
+width:90%;
+max-width:340px;
+margin:15px auto;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-size:18px;
+font-weight:bold;
+transition:0.3s;
+border:2px solid #d4af37;
+}
+
+.btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 15px #d4af37;
+}
+
+.whatsapp{background:#25D366;color:white;}
+.facebook{background:#1877F2;color:white;}
+.instagram{background:#E1306C;color:white;}
+.call{background:#1e88e5;color:white;}
+.offer{background:#0d47a1;color:white;}
+
+.calculator{
+margin-top:40px;
+padding:20px;
+border:1px solid #d4af37;
+border-radius:20px;
+max-width:350px;
+margin-left:auto;
+margin-right:auto;
+}
+
+input{
+padding:10px;
+width:80%;
+border-radius:10px;
+border:none;
+margin:10px 0;
+text-align:center;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:#d4af37;
+color:black;
+font-weight:bold;
+cursor:pointer;
+}
+
+.map{
+margin-top:30px;
+border-radius:20px;
+overflow:hidden;
+}
+
+.footer{
+margin-top:30px;
+font-size:14px;
+color:#d4af37;
+}
+</style>
+
+<script>
+function calculate(){
+let price = document.getElementById("price").value;
+let months = document.getElementById("months").value;
+if(price && months){
+let result = (price / months).toFixed(2);
+document.getElementById("result").innerHTML = 
+"القسط الشهري تقريباً: " + result + " دج";
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>مـــحـل مـــدام شــيـك</h1>
+<h1 class="gold">MADAME CHIC ⚡</h1>
+<p class="gold">📍 حي الشط طريق البحيرة - الوادي</p>
+
+
+
+<a class="btn whatsapp" href="https://wa.me/2130542805522" target="_blank">📲 راسلنا واتساب</a>
+<a class="btn facebook" href="https://www.facebook.com">📘 فيسبوك</a>
+<a class="btn TikTok" href="https://www.tiktok.com">📘 تيك توك</a>
+<a class="btn instagram" href="https://www.instagram.com">📘 انستغرام</a>
+<a class="btn call" href="tel:0542805522">📞 اتصال مباشر</a>
+
+
+
+<div class="map">
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1665.73646202429!2d6.868506!3d33.384824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x125911be9321a2d7%3A0x69db53011853ab3a!2z2YXYrdmE2KfYqiDYp9mE2KfZhtin2YLYqSDZhNmE2YXZhNin2KjYsw!5e0!3m2!1sar!2sdz!4v1771356878669!5m2!1sar!2sdz"
+ width="100%" height="250" style="border:0;" allowfullscreen=""
+ loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<div class="footer">
+💙 الجودة • الثقة • الراحة  👑  
+</div>
+
+</div>
+
+</body>
+</html>
+
+
+
