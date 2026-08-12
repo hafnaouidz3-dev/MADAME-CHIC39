@@ -1,154 +1,419 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ELECTRO-CMT | Premium</title>
+
+<title>MADAME CHIC</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+  box-sizing:border-box;
+}
+
+html,
 body{
-margin:0;
-font-family:'Cairo',sans-serif;
-background:linear-gradient(135deg,#071a3a,#0d2c6c,#0f3f91);
-color:white;
-text-align:center;
-overflow-x:hidden;
+  margin:0;
+  padding:0;
+  min-height:100%;
 }
 
+/* الخلفية الخارجية */
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+
+  font-family:'Cairo',sans-serif;
+
+  background:
+    radial-gradient(
+      ellipse at center,
+      #d85a4e 0%,
+      #a84539 35%,
+      #4b957d 100%
+    );
+
+  color:white;
+  text-align:center;
+  overflow-x:hidden;
+}
+
+
+/* الإطار الداخلي */
+.card{
+
+  width:510px;
+  max-width:100%;
+
+  min-height:100vh;
+
+  padding:30px 15px;
+
+  /* الإطار */
+  border-left:1px solid rgba(255,255,255,0.35);
+  border-right:1px solid rgba(255,255,255,0.35);
+
+  border-radius:18px 18px 0 0;
+
+  /* خلفية الكرت */
+  background:
+    radial-gradient(
+      ellipse at center,
+      #e15b50 0%,
+      #d85a4d 35%,
+      #6ac6a4 100%
+    );
+
+  box-shadow:
+    0 0 50px rgba(210,80,65,0.45);
+
+  animation:fadeIn 1.5s ease-in-out;
+}
+
+
+/* المحتوى */
 .container{
-padding:40px 20px;
-animation:fadeIn 1.5s ease-in-out;
+  width:100%;
+  padding:10px 0;
 }
 
+
+/* الحركة */
 @keyframes fadeIn{
-from{opacity:0; transform:translateY(30px);}
-to{opacity:1; transform:translateY(0);}
+
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
 }
+
 
 h1{
-margin:5px 0;
-font-size:26px;
+  margin:5px 0;
+  font-size:26px;
 }
+
 
 .gold{
-color:#d4af37;
+  color:#f0d477;
 }
 
+
+/* الأزرار */
 .btn{
-display:block;
-width:90%;
-max-width:340px;
-margin:15px auto;
-padding:15px;
-border-radius:50px;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-transition:0.3s;
-border:2px solid #d4af37;
+
+  display:block;
+
+  width:90%;
+  max-width:340px;
+
+  margin:15px auto;
+
+  padding:15px;
+
+  border-radius:50px;
+
+  text-decoration:none;
+
+  font-size:18px;
+  font-weight:bold;
+
+  transition:0.3s;
+
+  border:2px solid #f0d477;
+
 }
+
 
 .btn:hover{
-transform:scale(1.05);
-box-shadow:0 0 15px #d4af37;
+
+  transform:scale(1.05);
+
+  box-shadow:
+    0 0 15px #f0d477;
+
 }
 
-.whatsapp{background:#25D366;color:white;}
-.facebook{background:#1877F2;color:white;}
-.instagram{background:#E1306C;color:white;}
-.call{background:#1e88e5;color:white;}
-.offer{background:#0d47a1;color:white;}
 
+.whatsapp{
+  background:#1DBF6E;
+  color:white;
+}
+
+
+.facebook{
+  background:#224FFF;
+  color:white;
+}
+
+
+.instagram{
+  background:#B15ED4;
+  color:white;
+}
+
+
+.call{
+  background:#6ac6a4;
+  color:white;
+}
+
+
+.offer{
+  background:#868A9A;
+  color:white;
+}
+
+
+/* الخريطة */
+.map{
+
+  width:90%;
+  margin:30px auto 0;
+
+  border-radius:15px;
+
+  overflow:hidden;
+
+  border:2px solid rgba(255,255,255,0.7);
+
+}
+
+
+.map iframe{
+
+  display:block;
+
+  width:100%;
+  height:300px;
+
+  border:0;
+
+}
+
+
+/* الحاسبة */
 .calculator{
-margin-top:40px;
-padding:20px;
-border:1px solid #d4af37;
-border-radius:20px;
-max-width:350px;
-margin-left:auto;
-margin-right:auto;
+
+  margin-top:40px;
+
+  padding:20px;
+
+  border:1px solid #f0d477;
+
+  border-radius:20px;
+
+  max-width:350px;
+
+  margin-left:auto;
+  margin-right:auto;
+
 }
+
 
 input{
-padding:10px;
-width:80%;
-border-radius:10px;
-border:none;
-margin:10px 0;
-text-align:center;
+
+  padding:10px;
+
+  width:80%;
+
+  border-radius:10px;
+
+  border:none;
+
+  margin:10px 0;
+
+  text-align:center;
+
 }
+
 
 button{
-padding:10px 20px;
-border:none;
-border-radius:20px;
-background:#d4af37;
-color:black;
-font-weight:bold;
-cursor:pointer;
+
+  padding:10px 20px;
+
+  border:none;
+
+  border-radius:20px;
+
+  background:#f0d477;
+
+  color:#333;
+
+  font-weight:bold;
+
+  cursor:pointer;
+
 }
 
-.map{
-margin-top:30px;
-border-radius:20px;
-overflow:hidden;
-}
 
+/* أسفل الصفحة */
 .footer{
-margin-top:30px;
-font-size:14px;
-color:#d4af37;
+
+  margin-top:30px;
+
+  font-size:14px;
+
+  color:#f0d477;
+
+  padding-bottom:20px;
+
 }
+
 </style>
 
+
 <script>
+
 function calculate(){
-let price = document.getElementById("price").value;
-let months = document.getElementById("months").value;
-if(price && months){
-let result = (price / months).toFixed(2);
-document.getElementById("result").innerHTML = 
-"القسط الشهري تقريباً: " + result + " دج";
+
+  let price =
+    document.getElementById("price").value;
+
+  let months =
+    document.getElementById("months").value;
+
+  if(price && months){
+
+    let result =
+      (price / months).toFixed(2);
+
+    document.getElementById("result").innerHTML =
+      "القسط الشهري تقريباً: " +
+      result +
+      " دج";
+
+  }
+
 }
-}
+
 </script>
 
 </head>
 
+
 <body>
 
-<div class="container">
 
-<h1>مـــحـل مـــدام شــيـك</h1>
-<h1 class="gold">MADAME CHIC ⚡</h1>
-<p class="gold">📍 حي الشط طريق البحيرة - الوادي</p>
+<!-- الإطار الداخلي -->
 
+<div class="card">
 
 
-<a class="btn whatsapp" href="https://wa.me/2130542805522" target="_blank">📲 راسلنا واتساب</a>
-<a class="btn facebook" href="https://www.facebook.com">📘 فيسبوك</a>
-<a class="btn TikTok" href="https://www.tiktok.com">📘 تيك توك</a>
-<a class="btn instagram" href="https://www.instagram.com">📘 انستغرام</a>
-<a class="btn call" href="tel:0542805522">📞 اتصال مباشر</a>
+  <div class="container">
+
+
+    <h1>
+      مـــحـل مـــدام شــيـك
+    </h1>
+
+
+    <h1 class="gold">
+      👑 MADAME CHIC 👑
+    </h1>
+
+
+    <p class="gold">
+      📍 حي الشط طريق البحيرة - الوادي
+    </p>
 
 
 
+    <a
+      class="btn whatsapp"
+      href="https://wa.me/2130542805522"
+      target="_blank">
+
+      📲 راسلنا واتساب
+
+    </a>
+
+
+    <a
+      class="btn facebook"
+      href="https://www.facebook.com"
+      target="_blank">
+
+      📘 فيسبوك
+
+    </a>
+
+
+    <a
+      class="btn TikTok"
+      href="https://www.tiktok.com"
+      target="_blank">
+
+      🎵 تيك توك
+
+    </a>
+
+
+    <a
+      class="btn instagram"
+      href="https://www.instagram.com"
+      target="_blank">
+
+      📸 انستغرام
+
+    </a>
+
+
+    <a
+      class="btn call"
+      href="tel:0542805522">
+
+      📞 اتصال مباشر
+
+    </a>
+
+
+
+    <!-- الخريطة -->
+
+    
 <div class="map">
-</div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1665.73646202429!2d6.868506!3d33.384824!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x125911be9321a2d7%3A0x69db53011853ab3a!2z2YXYrdmE2KfYqiDYp9mE2KfZhtin2YLYqSDZhNmE2YXZhNin2KjYsw!5e0!3m2!1sar!2sdz!4v1771356878669!5m2!1sar!2sdz"
- width="100%" height="250" style="border:0;" allowfullscreen=""
- loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-<div class="footer">
-💙 الجودة • الثقة • الراحة  👑  
-</div>
+  <iframe
+    src="https://www.google.com/maps?q=33.384213,6.8651263&hl=ar&z=17&output=embed"
+    width="100%"
+    height="350"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 
 </div>
+
+    </div>
+
+
+
+    <div class="footer">
+
+      💙 الجودة • الثقة • الراحة
+      👑
+
+    </div>
+
+
+  </div>
+
+</div>
+
 
 </body>
 </html>
-
-
-
